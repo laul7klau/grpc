@@ -46,7 +46,7 @@ var (
 	errInvalidToken    = status.Errorf(codes.Unauthenticated, "invalid token")
 )
 
-var port = flag.Int("port", 443, "the port to serve on")
+var port = flag.Int("port", 50051, "the port to serve on")
 
 // hwServer is used to implement helloworld.GreeterServer.
 type hwServer struct {
